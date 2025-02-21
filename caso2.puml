@@ -1,0 +1,25 @@
+@startuml
+class Punto2D {
+    - coordX: double
+    - coordY: double
+    
+    + Punto2D()
+    + Punto2D(x: double, y: double)
+    + setCoordX(x: double): void
+    + getCoordX(): double
+    + setCoordY(y: double): void
+    + getCoordY(): double
+}
+class Circunferencia {
+    - centro: Punto2D
+    - radio: double
+
+    + Circunferencia()
+    + Circunferencia(radio: double,  x: double, y: double)
+    + Circunferencia(radio: double, centro: Punto2D)
+    + setCenter(centro: Punto2D): void
+    + getCenter(): Punto2D
+    + setRadius(radio: double): void
+    + getRadius(): double
+}
+@enduml
